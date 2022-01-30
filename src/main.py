@@ -1,8 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-import matplotlib
-matplotlib.use('macosx')
+# import matplotlib
+# matplotlib.use('macosx')
+# matplotlib.use('module://backend_integrate')
 pdf = pd.DataFrame([[1, 2, 3]], columns=['a', 'b', 'c'])
 print(pdf)
 x = np.arange(0, 4*np.pi, 0.1)   # start,stop,step
