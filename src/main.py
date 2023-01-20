@@ -30,3 +30,6 @@ test["rank"] = test.groupby("Industry")["cnt"].rank(method="dense", ascending=Fa
 print(test)
 tmp = test.loc[test['rank']==1.0]
 print(tmp)
+service_pdf = pd.read_csv('../data/311-service-requests.csv')
+print(service_pdf.head())
+print(sorted(service_pdf.columns))
